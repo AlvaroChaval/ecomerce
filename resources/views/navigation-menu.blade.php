@@ -17,9 +17,9 @@
                     </x-jet-nav-link>
 
 
-                    <x-jet-nav-link href="{{route('admin.orders.index')}}" :active="request()->routeIs('admin.orders.*')">
+                    {{-- <x-jet-nav-link href="{{route('admin.orders.index')}}" :active="request()->routeIs('admin.orders.*')">
                         Ordenes
-                    </x-jet-nav-link>
+                    </x-jet-nav-link> --}}
 
                     <x-jet-nav-link href="{{route('admin.categories.index')}}" :active="request()->routeIs('admin.categories.*')">
                         Categorias
@@ -30,7 +30,7 @@
                     </x-jet-nav-link>
 
                     <x-jet-nav-link href="{{route('admin.departments.index')}}" :active="request()->routeIs('admin.departments.index')">
-                        Departamentos
+                        Proveedor
                     </x-jet-nav-link>
 
                     <x-jet-nav-link href="{{route('admin.users.index')}}" :active="request()->routeIs('admin.users.index')">

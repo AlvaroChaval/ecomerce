@@ -76,3 +76,8 @@
     @endpush
     
 </x-app-layout>
+<body>
+    <div class="mx-auto">
+        <x-alert/>
+    </div>
+</body>

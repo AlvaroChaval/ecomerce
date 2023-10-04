@@ -3,7 +3,7 @@
     <x-jet-form-section submit="save" class="mb-6">
 
         <x-slot name="title">
-            Agregar un nuevo departamento
+            Agregar un nuevo proveedor
         </x-slot>
 
         <x-slot name="description">
@@ -25,7 +25,7 @@
         <x-slot name="actions">
 
             <x-jet-action-message class="mr-3" on="saved">
-                Departamento agregado
+                proveedor agregado
             </x-jet-action-message>
 
             <x-jet-button>
@@ -37,11 +37,11 @@
     {{-- Mostrar Departamentos --}}
     <x-jet-action-section>
         <x-slot name="title">
-            Lista de Departamentos
+            Lista de proveedor
         </x-slot>
 
         <x-slot name="description">
-            Aquí encontrará todas los departamentos agregados
+            Aquí encontrará todas los proveedores agregado
         </x-slot>
 
         <x-slot name="content">
@@ -81,7 +81,7 @@
     <x-jet-dialog-modal wire:model="editForm.open">
 
         <x-slot name="title">
-            Editar departamento
+            Editar proveedor
         </x-slot>
 
         <x-slot name="content">
@@ -115,13 +115,13 @@
             Livewire.on('deleteDepartment', departmentId => {
             
                 Swal.fire({
-                    title: 'Are you sure?',
-                    text: "You won't be able to revert this!",
-                    icon: 'warning',
+                    title: 'Estas seguro?',
+                    text: "No vas a poder recuperarlo!",
+                    icon: 'peligro',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
                     cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes, delete it!'
+                    confirmButtonText: 'si, eliminalo!'
                 }).then((result) => {
                     if (result.isConfirmed) {
 

@@ -9,6 +9,14 @@
             <x-button-enlace class="ml-auto" href="{{route('admin.products.create')}}">
                 Agregar producto
             </x-button-enlace>
+
+            <x-button-enlace class="ml-auto" href="{{route('admin.products.create')}}">
+                <a href="fpdf/PruebaV.php" target="_blank" class="btn btn-success"><i class="fas fa-file-pdf"></i> Generar reportes</a> 
+            </x-button-enlace>
+
+            <div>
+                <a href="fpdf/" target="_blank" class="btn btn-success"><i class="fas fa-file-pdf"></i> Generar reportes</a> 
+            </div>
         </div>
     </x-slot>
 
@@ -26,6 +34,8 @@
                     placeholder="Ingrese el nombre del procucto que quiere buscar" />
 
             </div>
+
+            
 
             @if ($products->count())
                 

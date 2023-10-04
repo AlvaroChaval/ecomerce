@@ -18,7 +18,7 @@ class CategorySeeder extends Seeder
     {
         $categories = [
             [
-                'name' => 'Moda',
+                'name' => 'Poleras',
                 'slug' => Str::slug('Moda'),
                 'icon' => '*'
             ],
@@ -29,19 +29,19 @@ class CategorySeeder extends Seeder
             ],
 
             [
-                'name' => 'Consola y video juegos',
+                'name' => 'Pantalones',
                 'slug' => Str::slug('Consola y video juegos'),
                 'icon' => '*'
             ],
 
             [
-                'name' => 'Belleza',
+                'name' => 'Zapatillas',
                 'slug' => Str::slug('Belleza'),
                 'icon' => '*'
             ],
 
             [
-                'name' => 'Libreria',
+                'name' => 'Shorts',
                 'slug' => Str::slug('Libreria'),
                 'icon' => '*'
             ],
